@@ -1,0 +1,46 @@
+<body>
+  <!--== Here Start Create most top row ==-->
+  <div class="container-fluid">
+    <div id="top_row" class="row">
+      <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+        <span>CryptoCurrencies:</span><b> {{global?.total_cryptocurrencies | number: '2.'}}</b>
+      </div>
+      <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+        <span>Market Pairs:</span><b> {{global?.active_market_pairs | number: '2.'}}</b>
+      </div>
+      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+        <span>Market Cap:</span><b> ${{global?.quote.USD.total_market_cap.toFixed(0) | number: '2.'}}</b>
+      </div>
+      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+        <span>24h Vol:</span><b> ${{global?.quote.USD.total_volume_24h.toFixed(0) | number: '2.'}}</b>
+      </div>
+      <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+        <span>BTC Dominance:</span><b> {{global?.btc_dominance.toFixed(1)}}%</b>
+      </div>
+    </div>
+  </div>
+  <!--== Here End top most row ==-->
+  <!--===== Here create header which contain a navigation link =======================================-->
+  <header>
+    <!-- Here Navbar Start -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+      <a class="navbar-brand"><img src="../assets/Images/logo.jpg" alt="Image of Coin">&nbsp;CryptoCurrencies App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" [routerLink]="['/cryptocurrencies']">CryptoCurrencies List View</a>
+          <a class="nav-link" [routerLink]="['/']">Comparison View</a>
+          <a class="nav-link" [routerLink]="['/price-chart']">Price Chart View</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Here Navbar End -->
+  </header>
+  <!-- Here Header End -->
+  <div class="container-fluid">
+    <router-outlet></router-outlet>
+  </div>
+</body>

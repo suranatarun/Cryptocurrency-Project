@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons'); 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c4c6c9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2f435e;
+  width: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2f435e;
+  width: 10px;
+}
+/*# sourceMappingURL=styles.css.map */

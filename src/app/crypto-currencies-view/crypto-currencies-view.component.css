@@ -1,0 +1,138 @@
+#top_row {
+    margin: 1% 2% 0% 2%;
+    border-radius: 0px 0px 40px 40px;
+    padding: 1.5%;
+    background-color: #44566c;
+}
+
+.compare,
+.p-btn,
+.mc-btn,
+.filter_btn,
+.chart,
+.save,
+.delete {
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    color: #44566c;
+    padding: 4% 10%;
+    font-family: 'Arial Rounded MT';
+}
+
+pagination-controls.pg {
+    margin-top: 2%;
+    color: #ececec;
+    text-decoration: none;
+    font-family: 'Arial Rounded MT';
+    text-align: center;
+}
+
+#filter_tab {
+    background: #44566c;
+    border-radius: 10px;
+    margin: 3% 3%;
+    padding: 1% 2%;
+}
+
+input[type=range] {
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+}
+
+span {
+    color: #ececec;
+    font-weight: 600;
+}
+
+#snd-row {
+    display: flex;
+    justify-content: center;
+}
+
+.all,
+.fav {
+    border: none;
+    background-color: transparent;
+    color: #2f435e;
+    font-family: 'Arial Rounded MT';
+    font-size: 20px;
+    text-align: center;
+}
+
+mat-slider {
+    width: 35vw;
+}
+
+table {
+    margin-top: 1%;
+    border-radius: 5px;
+    border-top: 2px solid #2f435e;
+}
+
+input[type=checkbox] {
+    padding: 0.5%;
+    font-size: 20px;
+    border: 1.3px solid #44566c;
+}
+
+thead,
+tr {
+    border-top: 1.5px solid #2f435e;
+}
+
+tr,
+th.col {
+    color: #2f435e;
+    font-family: 'Arial Rounded MT';
+    font-weight: bolder;
+}
+
+tr,
+td {
+    color: #4b5e65;
+    font-family: 'Arial Rounded MT';
+    font-weight: lighter;
+}
+
+img.coin {
+    max-width: 25px;
+    max-height: 25px;
+}
+
+@media (min-width: 360px) and (max-width: 680px) {
+    .compare,
+    .p-btn,
+    .mc-btn,
+    .filter_btn,
+    .chart,
+    .save,
+    .delete {
+        margin: 12px auto;
+        display: block;
+    }
+    .pg {
+        margin:0px;
+        display:block;
+        margin:auto;
+    }
+}
+
+@media (min-width: 700px) and (max-width:900px) {
+    .compare,
+    .p-btn,
+    .mc-btn,
+    .filter_btn,
+    .chart,
+    .save,
+    .delete {
+        margin: 12px auto;
+        display: block;
+    }
+    .pg {
+        margin:0px;
+        display:block;
+        margin:auto;
+    }
+}

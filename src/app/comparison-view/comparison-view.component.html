@@ -1,0 +1,19 @@
+<div *ngIf="chart">
+    <canvas id="canvas">{{chart}}</canvas>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th scope="col">Coin Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Market Capital</th>
+            <th scope="col">Volume 24h</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let show of compare">
+        <td>{{show.name}}</td>
+        <td>${{show.quote?.USD.price.toFixed(2) | number: '2.'}}</td>
+        <td>${{show.quote?.USD.market_cap.toFixed(2) | number: '2.'}}</td>
+        <td>${{show.quote?.USD.volume_24h.toFixed(2) | number: '2.'}}</td>
+    </tbody>
+</table>

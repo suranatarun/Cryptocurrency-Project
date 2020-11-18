@@ -1,0 +1,13 @@
+@media (min-width: 576px) and (max-width: 768px) {
+    div {
+        overflow: auto;
+    }
+    div, canvas{
+        display: inline-block;
+        text-align: center;
+        padding: 14px;
+        height:500px;
+        width:800px;
+        text-decoration: none;
+    }
+ }

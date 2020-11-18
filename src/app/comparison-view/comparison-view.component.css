@@ -1,0 +1,27 @@
+div {
+    overflow: auto;
+}
+div, canvas{
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    height:500px;
+    width:800px;
+    text-decoration: none;
+}
+table {
+    width:100%;
+    margin:0.5% 1%;
+}
+thead, tr, th {
+    color:#A59C94FF;
+    text-align: center;
+    font-family:'Arial Rounded MT';
+    border-top: 2px solid #AE0E36FF;
+}
+tbody, tr, td{
+    color:#D32E5EFF;
+    text-align: center;
+    font-family:'Arial Rounded MT';
+    border-top: 2px solid#A59C94FF;
+}

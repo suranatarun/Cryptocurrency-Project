@@ -1,0 +1,27 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">CMC</th>
+            <th scope="col">ID</th>
+            <th scope="col">Coins</th>
+            <th scope="col">Name</th>
+            <th scope="col">Symbol</th>
+            <th scope="col">Price</th>
+            <th scope="col">Market Capital</th>
+            <th scope="col">Volume 24h</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let favdata of arraydata">
+            <td>{{favdata.cmc_rank}}</td>
+            <td>{{favdata.id}}</td>
+            <td><img class="coin" src="https://s2.coinmarketcap.com/static/img/coins/64x64/{{favdata.id}}.png"></td>
+            <td>{{favdata.name}}</td>
+            <td>{{favdata.symbol}}</td>
+            <td>${{favdata.quote?.USD.price.toFixed(2) | number: '2.'}}</td>
+            <td>${{favdata.quote?.USD.market_cap.toFixed(0) | number: '2.'}}</td>
+            <td>${{favdata.quote?.USD.volume_24h.toFixed(0) | number: '2.'}}</td>
+        </tr>
+    </tbody>
+</table>
+

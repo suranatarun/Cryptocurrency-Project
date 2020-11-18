@@ -1,0 +1,59 @@
+body {
+    background-color: #ececec;
+}
+
+.top_row,
+span {
+    color: #201b22;
+    font-family: 'Arial Rounded MT';
+    text-align: center;
+}
+
+.top_row,
+b {
+    color: #4b5e65;
+    font-family: 'Arial Rounded MT';
+    text-align: center;
+}
+
+.navbar {
+    background-color: #2f435e;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.navbar-brand {
+    font-size: 2vw;
+    font-family: 'Arial Rounded MT';
+    color: #ececec;
+    text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+    color: #ececec;
+    cursor: pointer;
+}
+
+img {
+    max-width: 3vw;
+    max-height: 3vw;
+}
+
+.navbar-nav {
+    margin-left: 20%;
+}
+
+.navbar-nav .nav-link {
+    color: #ececec;
+    font-family: 'Arial Rounded MT';
+    padding: 0px 24px;
+}
+
+@media (min-width: 360px) and (max-width: 680px) {
+    .navbar-brand {
+        font-size:18px;
+    }
+    img{
+        min-width:20px;
+        min-height:20px;
+    }
+}
